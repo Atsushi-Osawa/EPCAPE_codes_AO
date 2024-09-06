@@ -3,8 +3,7 @@
 % PURPOSE: Fits two lognormal modes to 5 minute-averaged measured size
 % distributions from SEMS during EPCAPE. 
 %
-% INPUTS: SEMS size distribution; requires the function
-% create_psd.m in library
+% INPUTS: SEMS size distribution; 
 
 % OUTPUTS: Saves lognormal modal fits to a .mat file. 
 %
