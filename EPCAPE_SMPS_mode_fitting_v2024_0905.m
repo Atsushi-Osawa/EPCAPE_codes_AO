@@ -16,7 +16,7 @@
 %         SIO
 %         July 19,2024
 % Notes: Modified variable name for EPCAPE analysis of Pier distribution
-% and added section for grpahing a well as odified it to only fit SMPS
+% and added section for grpahing a well as modified it to only fit SMPS
 % region (excluding mode1)
 %% %% Clearing the variables, figures, command window, etc..
 clear all; close all; clc
