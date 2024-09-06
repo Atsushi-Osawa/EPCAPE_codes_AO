@@ -25,12 +25,12 @@ Outputs particle number size distribution (PNSD) and particle mass size distribu
 Hoppel_min_soledad_v2024_0905.m: This MATLAB program uses the fitted aerosol modes to retrieve the Hoppel Minimum diameter at Mt. Soledad. Program for retrieving
 Hoppel Minimum diameter using the intersection of fitted modes and the minimum from measured size distribution is also included (Dedrick et al., 2024).
 Section to retrieve the Hoppel Minimum only for the distribution where the category for distribution is bimodal is also included. Concatenates Hoppel Minimum
-identified from merged size distribution to those identified from SEMS distribution when APS was unavailable.
+identified from merged size distribution to those identified from SEMS distribution when APS was unavailable. Whether to include bimodal distribution conditions or not can be customized.
 
 Hoppel_min_pier_v2024_0905.m:  This MATLAB program uses the fitted aerosol modes to retrieve the Hoppel Minimum diameter at Pier. Program for retrieving
 Hoppel Minimum diameter using the intersection of fitted modes and the minimum from measured size distribution is also included (Dedrick et al., 2024).
 Section to retrieve the Hoppel Minimum only for the distribution where the category for distribution is bimodal is also included. Concatenates Hoppel Minimum
-identified from merged size distribution to those identified from SMPS distribution when APS was not available.
+identified from merged size distribution to those identified from SMPS distribution when APS was not available. Whether to include bimodal distribution conditions or not can be customized.
 
 EPCAPE_SMPS_mode_fitting_v2024_0905.m: This MATLAB program fits two lognormal modes of accumulation and Aitken to 5-minute averaged SMPS measured size distribution
 of SMPS during EPCAPE at Pier. Saves lognormal modal fits to a .mat file. A modified version of EPCAPE_FittingModel_pier_v20240716.m to allow for the fitting of accumulation and
