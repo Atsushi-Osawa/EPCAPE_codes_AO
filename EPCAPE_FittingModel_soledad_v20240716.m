@@ -2,7 +2,7 @@
 %
 %
 % PURPOSE: Fits three lognormal modes to 5 minute-averaged measured size
-% distributions from APS and SMPS during EPCAPE. 
+% distributions from APS and SEMS during EPCAPE. 
 %
 %
 % INPUTS: EPCAPE_SMPS_APS_merged_5min_20240717.mat - data file that contains 5 minute-averaged
