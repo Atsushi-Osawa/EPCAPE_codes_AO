@@ -1,10 +1,10 @@
 %% EPCAPE_SEMS_APS_merge_v20231011.m
 %
-% PURPOSE: Reads in EPCAPE SEMS and APS data, computes averages, and merges
+% PURPOSE: Reads in EPCAPE SMPS and APS data, computes averages, and merges
 % the size distributions following Khlystov (2004) and Modini et al.
 % (2015). 
 %
-% INPUTS: 5 minute SEMS and APS data.
+% INPUTS: 5 minute SMPS and APS data.
 %
 % OUTPUTS: .MAT files of merged size distributions and CVI size
 % distributions. 
