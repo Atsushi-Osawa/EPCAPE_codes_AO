@@ -40,9 +40,15 @@ EPCAPE_SEMS_mode_fitting_v2024_0906.m: This MATLAB program fits two lognormal mo
 of SEMS during EPCAPE at Mt. Soledad. Saves lognormal modal fits to a .mat file. A modified version of EPCAPE_FittingModel_soledad_v20240716.m to allow for the fitting of accumulation and
 Aitken mode when APS was not available.
 
+Pier_category_v20240819 (1).csv and Soledad_category_v20240807 (2).csv
 
+Dates are in UTC time and categorization of distribution and fits were made as follows:
+value of 0: PNSD data was missing for the measurement period (this value seems to be pretty high for Soledad(1/3 of all period) most likely due to SEMS not being run while Soledad was in-cloud)
+value of 1: Observed bimodal distribution in the submicron range (<1μm) and fits of those two modes in the submicron range were correct
+value of 2: Observed unimodal distribution in the submicron range
+value of 3: All other cases. Such as when PNSD distribution was bimodal but not correctly fit, more than two modes in the submicron range, etc...
 
-Link to CSV file for size distributions: https://drive.google.com/file/d/1_mUsjD_1pXbC4ro78WDKl0JG4Ydm3euH/view?usp=sharing
+Link to CSV file for size distributions and modal fit: https://drive.google.com/file/d/1_mUsjD_1pXbC4ro78WDKl0JG4Ydm3euH/view?usp=sharing
 File was too big to be uploaded to GitHub
 
 
