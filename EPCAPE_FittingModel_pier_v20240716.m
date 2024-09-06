@@ -2,11 +2,11 @@
 %
 %
 % PURPOSE: Fits three lognormal modes to 5 minute-averaged measured size
-% distributions from APS and SMPS during EPCAPE. 
+% distributions from APS and SMPS during EPCAPE. Requires the function create_PSD to be in the directory.
 %
 %
 % INPUTS: EPCAPE_SMPS_APS_merged_5min_20240717.mat - data file that contains 5 minute-averaged
-% particle number size distributions at Pier.
+% particle number size distributions at Pier. 
 %
 % OUTPUTS: Saves lognormal modal fits to a .mat file. 
 %
