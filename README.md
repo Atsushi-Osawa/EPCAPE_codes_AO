@@ -40,3 +40,37 @@ EPCAPE_SEMS_mode_fitting_v2024_0906.m: This MATLAB program fits two lognormal mo
 of SEMS during EPCAPE at Mt. Soledad. Saves lognormal modal fits to a .mat file. A modified version of EPCAPE_FittingModel_soledad_v20240716.m to allow for the fitting of accumulation and
 Aitken mode when APS was not available.
 
+
+
+Link to CSV file for size distributions: https://drive.google.com/file/d/1_mUsjD_1pXbC4ro78WDKl0JG4Ydm3euH/view?usp=sharing
+File was too big to be uploaded to GitHub
+
+
+EPCAPE_SMPS_APS_merged_5min_20240722.csv for Pier and EPCAPE_SEMS_APS_merged_5min_20240722.csv for Mt. Soledad:
+
+These merged size distributions only include the time when both APS and SEMS/SMPS time were available from measurement; Either as NaN or with value. 
+
+Notably, Pier does not have merged distribution 9/18~10/23
+
+Variables:
+time_5min: UTC of recorded measurements; They are five minutes apart as these were 5-minute averaged distributions.
+PNSD_merged_5min_1, PNSD_merged_5min_2,.....PNSD_merged_5min_100:Aerosol particle size distribution corresponding to D_merged. In units of cm^-3
+D_merged (first 100 rows): Aerosol particle diameter corresponding to the 5-minute averaged size distribution data. These diameters are logarithmically spaced.  (0.01-10 µm) 
+e.g. PNSD_merged_5min_1 corresponds to the 1st row diameter of D_merged and so on.
+Nt_merge_5min:5 minute averaged total integrated number concentration of aerosols cm^-3 based on the particle size distribution
+Rho_merge_5min: Effective density used for merging APS and SEMS/ APS and SMPS
+
+
+EPCAPE_pier_mode_fit_out_0722.csv for Pier and EPCAPE_soledad_mode_fit_out_0722 for Mt. Soledad
+
+This distribution fits include those when there were only submicron SEMS/SMPS available but not APS. They were fit under the assumption that sea spray mode was in APS, giving two modal fits in the submicron range. All of the values below were constrained by the range developed by Dr.Derdrick in previous LASIC study
+
+Variables:
+Time_5min: UTC at which either merged size distribution was used to fit the modes (or SEMS/SMPS if APS was not available)
+sea_spray_N, accumulation_N,  aitken_N: Fitted number concentration of each of the modes cm^-3
+sea_spray_diam, accumlation_diam, aitken_diam: Center/peak of each of the modes that is fitted based on the fitting model; In units of micrometer
+sea_spray_gsd, accumulation_gsd, aitken_gsd: Residual of the fitted model for the objective function that was used; 
+fit_flag: A value of 1 here indicates that only SMPS/SEMS were used to fit that particular size distribution. Only accumulation and Aitken modal parameters would be available.
+
+
+
