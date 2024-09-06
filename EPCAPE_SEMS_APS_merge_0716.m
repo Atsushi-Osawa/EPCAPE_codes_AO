@@ -4,7 +4,7 @@
 % the size distributions following Khlystov (2004) and Modini et al.
 % (2015). 
 %
-% INPUTS: hourly averaged SEMS and APS data.
+% INPUTS: 5 minute SEMS and APS data.
 %
 % OUTPUTS: .MAT files of merged size distributions and CVI size
 % distributions. 
