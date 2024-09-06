@@ -34,9 +34,9 @@ identified from merged size distribution to those identified from SMPS distribut
 
 EPCAPE_SMPS_mode_fitting_v2024_0905.m: This MATLAB program fits two lognormal modes of accumulation and Aitken to 5-minute averaged merged measured size distribution
 of SMPS during EPCAPE at Pier. Saves lognormal modal fits to a .mat file. A modified version of EPCAPE_FittingModel_pier_v20240716.m to allow for the fitting of accumulation and
-Aitken mode when APS were not available
+Aitken mode when APS were not available.
 
 EPCAPE_SEMS_mode_fitting_v2024_0906.m: This MATLAB program fits two lognormal modes of accumulation and Aitken to 5-minute averaged merged measured size distribution
 of SMPS during EPCAPE at Pier. Saves lognormal modal fits to a .mat file. A modified version of EPCAPE_FittingModel_soledad_v20240716.m to allow for the fitting of accumulation and
-Aitken mode when APS were not available
+Aitken mode when APS were not available.
 
