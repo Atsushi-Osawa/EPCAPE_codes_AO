@@ -3,8 +3,7 @@
 % PURPOSE: Fits two lognormal modes to 5 minute measured size
 % distributions from SMPS during EPCAPE. 
 %
-% INPUTS: modal fit output from fitting model; requires the function
-% create_psd.m in library
+% INPUTS: SMPS 5-minute distribution. 
 
 % OUTPUTS: Saves lognormal modal fits to a .mat file. 
 %
