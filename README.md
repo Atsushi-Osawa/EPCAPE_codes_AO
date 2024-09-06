@@ -22,7 +22,7 @@ size distribution and their modal fit is available.
 create_PSD.m: This MATLAB program creates number and mass size distribution based on lognormal fitting parameters (number, mean size, and width). 
 Outputs particle number size distribution (PNSD) and particle mass size distribution(PMSD).
 
-Hoppel_min_soledad_v20240905.m: This MATLAB program uses the fitted aerosol modes to retrieve the Hoppel Minimum diameter at Mt. Soledad. Program for retrieving
+Hoppel_min_soledad_v2024_0905.m: This MATLAB program uses the fitted aerosol modes to retrieve the Hoppel Minimum diameter at Mt. Soledad. Program for retrieving
 Hoppel Minimum diameter using the intersection of fitted modes and the minimum from measured size distribution is also included (Dedrick et al., 2024).
 Section to retrieve the Hoppel Minimum only for the distribution where the category for distribution is bimodal is also included. Concatenates Hoppel Minimum
 identified from merged size distribution to those identified from SEMS distribution when APS was not available.
