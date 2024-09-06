@@ -1,14 +1,16 @@
-%% LASIC_SMPS_mode_fitting_2hr.m
+%% EPCAPE_FittingModel_pier_v20240716.m
 %
-% PURPOSE: Fits two lognormal modes to 2hr-averaged measured size
-% distributions from SMPS during LASIC. 
 %
-% INPUTS: LASIC_PNSD_2hr.mat - data file that contains 2hr-averaged
-% particle number size distributions. 
+% PURPOSE: Fits three lognormal modes to 5 minute-averaged measured size
+% distributions from APS and SMPS during EPCAPE. 
+%
+%
+% INPUTS: EPCAPE_SMPS_APS_merged_5min_20240717.mat - data file that contains 5 minute-averaged
+% particle number size distributions at Pier.
 %
 % OUTPUTS: Saves lognormal modal fits to a .mat file. 
 %
-% AUTHOR: Jeramy Dedrick
+% AUTHOR: Jeramy Dedrick (retrieved from LASIC_SMPS_mode_fitting_2hr.m)
 %         Scripps Institution of Oceanography
 %         March 18, 2022
 %
@@ -27,28 +29,7 @@ data    = '/Users/atsushiosawa/Downloads/'; %file name for the user
 out_dir = '/Users/atsushiosawa/Downloads/';  %file name for the user
 
 
-open_filename = 'EPCAPE_SMPS_APS_merged_5min_20240717.mat';% Merged distribution output here
-
-
-load(open_filename)
-%% Run this if we want to have filtering of CPC
-
-% load('CPC_f_5min.mat') %whatever name the CPC is in.
-% CPC=extract_CPC_f_array;
-% junk=4000; %upper limit of expected CPC under normal condition
-% 
-% timejunk = find(CPC>=junk);
-% timejunk=CPC_f_date(timejunk);
-% %% 
-% 
-% % %% 
-% time_5min=intersect_time;
-% 
-% time_5min_date=datetime(time_5min,'ConvertFrom','datenum');
-% [timejunk_int,...
-%     CPC_timejunk,...
-%     PNSD_timejunk] = intersect(timejunk,time_5min_date);
-% PNSD_merged_5min(:,PNSD_timejunk)= NaN; %removing PNSD data for where CPC value >4000 
+open_filename = 'EPCAPE_SMPS_APS_merged_5min_20240717.mat';% Merged distribution output here 
 
 %% 
 % for i=1:length(time_5min)
@@ -281,7 +262,7 @@ tot_fit_numb_conc=mode1_N+mode2_N+mode3_N;
 meas_int_numb_concent=Nt_merged_5min;
 numb_concent_percent= (abs(tot_fit_numb_conc-meas_int_numb_concent)./((tot_fit_numb_conc+meas_int_numb_concent)/2))*100;
 %% %% Plotting 2 by 2 plot of PNSD distirbution and fits
-for i=52481:4:length(time_5min) % we can change these ranges
+for i=1:4:length(time_5min) % these ranges can be changed
     idxplots=i:i+3;
     for j=1:4
     subplot(2,2,j)
@@ -341,13 +322,10 @@ for i=52481:4:length(time_5min) % we can change these ranges
     % below;
     %when we want to save these plots, remove percentage from two lines
     %with printname and print(printname,....)
-    % **Note:everytime model is run, what was there is overwritten
-    % printname=strcat('/Users/atsushiosawa/Downloads/EPCAPE_PIER_APSSMPS/0717_check_fitting_',num2str(idxplots(1)),'_',num2str(idxplots(end)));
-    % print(printname,'-dpng')%png don't stretch when creating 2x2 graphs... and print from the original output
+    %
+    % printname=strcat('/Users/atsushiosawa/Downloads/EPCAPE_IER_APSSMPS/0717_check_fitting_',num2str(idxplots(1)),'_',num2str(idxplots(end)));
+    % print(printname,'-dpng')
 end
-
-
-
 
 
 
