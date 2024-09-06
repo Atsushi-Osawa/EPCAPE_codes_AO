@@ -1,6 +1,6 @@
 %% EPCAPE_SMPS_mode_fitting_v2024_0905.m
 %
-% PURPOSE: Fits two lognormal modes to 2hr-averaged measured size
+% PURPOSE: Fits two lognormal modes to 5 minute measured size
 % distributions from SMPS during EPCAPE. 
 %
 % INPUTS: modal fit output from fitting model; requires the function
